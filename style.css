@@ -1,0 +1,165 @@
+
+.bg-img {
+    /* The image used */
+    background-image: url("images/bgimg.jpg");
+  
+    min-height: 80px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .containertop {
+    position: absolute;
+    margin: 15px;
+    width: auto;
+  }
+.topnav {
+    background-color: black;
+    overflow: auto;
+    display: inline;
+    padding-bottom: 10px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav h1 {
+    float: left;
+    display: block;
+    color: #35374b;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #333A73;
+    color: white;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #35374b;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none ;
+  }
+
+  .containerfortype {
+    background-image: url("images/bgimg2.jpg");
+    min-height: 70px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .center {
+    display: block;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    width : 20%;
+    height : 20%;
+    border-style: solid;
+  }
+
+  .container x {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container p span.typed-text {
+    font-weight: normal;
+    color: #dd7732;
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333A73;
+  }
+  
+  .footer-container a {
+    color: #FBA834;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+    &:hover {
+      color: white;
+    }
+  }
+  
+  .footer-container ul {
+    display: flex;
+    padding: 0;
+    gap: 20px;
+    list-style-type: none;
+  }
+  
+  .copyright {
+    padding: 4px 4px;
+    text-align: center;
+    color: #333A73;
+    background-image: url("images/bgimg.jpg");
+    font-size: 17px ;
+  }
+  

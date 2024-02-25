@@ -2,9 +2,9 @@ const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = ["Sairaj Pai.", "tablaplayer.", "gegendepressed ?", "developer."];
-const typingDelay = 100; // Decreased typing delay for smoother effect
-const erasingDelay = 50; // Decreased erasing delay for smoother effect
-const newTextDelay = 2000; // Delay between current and next text
+const typingDelay = 75; // Decreased typing delay for smoother effect
+const erasingDelay = 25; // Decreased erasing delay for smoother effect
+const newTextDelay = 1000; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 

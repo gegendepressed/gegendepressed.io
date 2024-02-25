@@ -41,7 +41,8 @@
   .topnav h1 {
     float: left;
     display: block;
-    color: #35374b;
+    color: white;
+    text-decoration: solid;
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
@@ -236,6 +237,8 @@ padding: 10px;
     display: flex;
     padding: 0;
     gap: 20px;
+    margin: 0-auto;
+    text-align: center;
     list-style-type: none;
   }
   

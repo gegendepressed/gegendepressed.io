@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Sairaj Pai.", "tablaplayer.", "gegendepressed ?", "developer."];
+const textArray = ["Sairaj Pai.", "a tablaplayer.", "gegendepressed ?", "a developer."];
 const typingDelay = 75; // Decreased typing delay for smoother effect
 const erasingDelay = 25; // Decreased erasing delay for smoother effect
 const newTextDelay = 1000; // Delay between current and next text
@@ -38,3 +38,27 @@ document.addEventListener("DOMContentLoaded", function () {
   // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+
+   function validateForm() {
+    let myForm = document.forms["myForm"];
+    let name = myForm["name"].value;
+    let email = myForm["email"].value;
+    let subject = myForm["subject"].value;
+    let message = myForm["message"].value;
+    let finalstring = name+"\n"+email+"\n"+subject+"\n"+message;
+    
+    console.log(finalstring);
+    fetch('https://pingme.developer.li/api/sendmessage', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        "username": "relativesciencex",
+        "message": finalstring,
+        "securitykey": 4209})
+    })
+    .then(response => console.log(response.status))
+
+  } 

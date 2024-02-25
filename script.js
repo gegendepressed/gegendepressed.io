@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-   function validateForm() {
+   async function validateForm() {
     let myForm = document.forms["myForm"];
     let name = myForm["name"].value;
     let email = myForm["email"].value;
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let finalstring = name+"\n"+email+"\n"+subject+"\n"+message;
     
     console.log(finalstring);
-    fetch('https://pingme.developer.li/api/sendmessage', {
+    const response = await fetch('https://pingme.developer.li/api/sendmessage', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "username": "relativesciencex",
         "message": finalstring,
         "securitykey": 4209})
-    })
-    .then(response => console.log(response.status))
-
+    });
+    respText = await response.text();
+    alert(respText);
   } 

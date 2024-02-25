@@ -79,14 +79,13 @@
   }
   .center {
     display: block;
+    margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
     width : 20%;
     height : 20%;
     border-style: solid;
+    border-color: #FBA834;
+    border-radius: 10px;
   }
 
   .container x {
@@ -125,6 +124,91 @@
     100%  { background-color: #ccc; }
   }
 
+  .profdesc{
+font-family: "Poppins", sans-serif;
+font-size: 16px;
+letter-spacing: 1px;
+word-spacing: 0px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: oblique;
+font-variant: normal;
+text-transform: none;
+padding: 10px;
+  }
+
+  .vl {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 13px;
+    -moz-column-gap: 13px;
+    column-gap: 13px;
+    -webkit-column-rule: 5px solid #1C6EA4;
+    -moz-column-rule: 5px solid #1C6EA4;
+    column-rule: 5px solid #1C6EA4;
+  }
+
+  .containerform {
+    background-color: black;
+    background: #333A73;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #dd7732 ;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  input,
+  textarea {
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    background-color: #e0e0e0;
+  }
+  
+  button {
+    background-color: rgb(179, 119, 42);
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #e74c4f, rgb(211, 134, 33));
+    transition: 1s ease;
+  }
+  
   .footer-container {
     display: flex;
     justify-content: space-between;

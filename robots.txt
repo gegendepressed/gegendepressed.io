@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sairaj.tabcat.live/sitemap.xml

@@ -1,0 +1,293 @@
+
+  .bg-img {
+    /* The image used */
+    background-image: url("images/bgimg.jpg");
+  
+    min-height: 80px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .containertop {
+    position: absolute;
+    margin: 15px;
+    width: auto;
+  }
+.topnav {
+    background-color: black;
+    overflow: auto;
+    display: inline;
+    padding-bottom: 10px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav h1 {
+    float: left;
+    display: block;
+    color: white;
+    text-decoration: solid;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #333A73;
+    color: white;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #35374b;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none ;
+  }
+
+  .containerfortype {
+    background-image: url("images/bgimg2.jpg");
+    min-height: 70px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width : 20%;
+    height : 20%;
+    border-style: solid;
+    border-color: #FBA834;
+    border-radius: 10px;
+  }
+
+  .container x {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container p span.typed-text {
+    font-weight: normal;
+    color: #dd7732;
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+  .profdesc{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  word-spacing: 0px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: oblique;
+  font-variant: normal;
+  text-transform: none;
+  padding: 20px;
+    }
+
+  .vl {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 13px;
+    -moz-column-gap: 13px;
+    column-gap: 13px;
+    -webkit-column-rule: 5px solid #1C6EA4;
+    -moz-column-rule: 5px solid #1C6EA4;
+    column-rule: 5px solid #1C6EA4;
+  }
+
+  .bgimg2 {
+    /* The image used */
+    background-image: url("images/bgimg2.jpg");
+  
+    min-height: 200px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+
+  }
+  .lineUp {
+    animation: 4s anim-lineUp ease-out alternate;
+    text-align: center;
+      font-weight: 500;
+      font-size: 100px;
+      font-style: normal;
+      color: black;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .containerform {
+    background-color: black;
+    background: #333A73;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #dd7732 ;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  input,
+  textarea {
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    background-color: #e0e0e0;
+  }
+  
+  button {
+    background-color: rgb(179, 119, 42);
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #e74c4f, rgb(211, 134, 33));
+    transition: 1s ease;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333A73;
+  }
+  
+  .footer-container a {
+    color: #FBA834;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+    &:hover {
+      color: white;
+    }
+  }
+  
+  .footer-container ul {
+    display: flex;
+    padding: 0;
+    gap: 20px;
+    margin: 0-auto;
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  .copyright {
+    padding: 4px 4px;
+    text-align: center;
+    color: #333A73;
+    background-image: url("images/bgimg.jpg");
+    font-size: 17px ;
+  }
+  

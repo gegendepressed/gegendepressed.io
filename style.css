@@ -239,3 +239,28 @@ body {
         height: auto;
     }
 }
+
+.contents-container{
+    padding: 70px;
+    background-color: #021526;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    
+
+}
+
+.contents-title{
+    font-size: 50px;
+    margin: 20px;
+    background-color:#B43F3F;
+    color:#F8EDED;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    width: fit-content;
+    padding: 20px;
+    align-items: center;
+}

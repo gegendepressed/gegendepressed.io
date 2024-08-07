@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
@@ -24,11 +25,11 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Contact</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
                 </ul>
             </div>
         </div>
@@ -45,15 +46,15 @@
     </div>
 
     <div class="aboutme-container">
-        <div class="aboutme"> About Me</div>
+        <div data-aos="zoom-in" class="aboutme"> About Me</div>
         <div class="description">
             I'm a multifaceted individual with a deep passion for tabla, sci-fi novels, sitcoms, and movies. Whether I'm lost in the rhythmic beats of the tabla, exploring captivating futuristic worlds in books, indulging in the humor of sitcoms, or dissecting the intricacies of cinema, I thrive on diverse experiences. Recently, I've also begun delving into coding, finding it both challenging and rewarding. Constantly seeking to broaden my horizons, I embrace new opportunities for exploration and discovery across various interests and disciplines. 
         </div>
     </div>
 
     <div class="projects-container" id="projects">
-        <div class="projects-title"> Projects </div>
-        <div class="card text-white bg-dark mb-3">
+        <div data-aos="fade-up" class="projects-title"> Projects </div>
+        <div data-aos="fade-up" class="card text-white bg-dark mb-3">
             <img src="images/openmedia.png" class="card-img-top cardimage" alt="...">
             <div class="card-body">
               <h5 class="card-title">Openmedia - A Social Media Web App</h5>
@@ -62,17 +63,16 @@
             </div>
           </div>
 
-
-          <div class="card text-white bg-dark mb-3">
+          <div data-aos="fade-up" class="card text-white bg-dark mb-3">
             <img src="images/jokes.png" class="card-img-top cardimage" alt="...">
             <div class="card-body">
               <h5 class="card-title">Reddit API - Jokes Scraper</h5>
               <p class="card-text"> This FastAPI application connects to Reddit using the PRAW library to fetch random posts from a specified subreddit. It returns the title, description, and URL of a post, ideal for a site that retrieves jokes from various subreddits.</p>
-              <a href="https://frost2k5.is-a.dev/jokes.htmlt" class="btn btn-primary">Go somewhere</a>
+              <a href="https://frost2k5.is-a.dev/jokes.html" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
 
-          <div class="card text-white bg-dark mb-3">
+          <div data-aos="fade-up" class="card text-white bg-dark mb-3">
             <img src="images/websitepic.png" class="card-img-top cardimage" alt="...">
             <div class="card-body">
               <h5 class="card-title">This Portfolio Website</h5>
@@ -82,26 +82,51 @@
           </div>
     </div>
 
-    <div class="contents-container text-white ">
-        <div class="contents-title"> Contact </div>
+    <div class="contents-container text-white " id="contact">
+        <div class="contents-title" data-aos="zoom-in"> Contact </div>
         <form>
         <div class="form-row">
-          <div class="col-auto text-left">
+          <div class="col-auto text-start">
             <label for="validationDefault01">First name</label>
-            <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+            <input type="text" class="form-control text-start" id="validationDefault01" placeholder="First name" value="Mark" required>
           </div>
-          <div class="col-auto text-left">
+          <div class="col-auto text-start">
             <label for="validationDefault02">Last name</label>
-            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+            <input type="text" class="form-control text-start" id="validationDefault02" placeholder="Last name" value="Otto" required>
           </div>
           </div>
-          <div class="form-group">
+          <div class="form-group text-start">
             <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="email" class="form-control text-start" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
         </form>
         </div>
 
+        <footer class="socialmedia-tray">
+          <div class="socialmedia-icons">
+            <a href="https://t.me/relativesciencx">
+              <img src="images/teleicon.svg" alt="Telegram">
+            </a>
+            <a href="https://instagram.com/the.tablaplayer" target="_blank" rel="noopener noreferrer">
+              <img src="images/instaicon.svg" alt="Instagram">
+            </a>
+            <a href="https://github.com/gegendepressed" target="_blank" rel="noopener noreferrer">
+              <img src="images/giticon.svg" alt="GitHub">
+            </a>
+            <a href="mailto:sairaj09pai@gmail.com">
+              <img src="images/mailicon.svg" alt="Email">
+            </a>
+            <a href="https://reddit.com/tablaplayer" target="_blank" rel="noopener noreferrer">
+              <img src="images/redditicon.svg" alt="Reddit">
+            </a>
+          </div>
+        </footer>
+        
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script></body>
 </html>

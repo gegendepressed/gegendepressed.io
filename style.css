@@ -5,6 +5,27 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+@font-face {
+    font-family: 'Figtree';
+    src: url(fonts/figtree/Figtree-ExtraBoldItalic.ttf);
+    letter-spacing: 3%;
+}
+
+@font-face {
+    font-family: 'Figtree Regular';
+    src: url(fonts/figtree/Figtree-Regular.ttf);
+    letter-spacing: 3%;
+}
+
+@font-face {
+    font-family: 'Figtree Bold';
+    src: url(fonts/figtree/Figtree-Bold.ttf);
+    letter-spacing: 3%;
+}
+
+
+
+
 
 .navbar {
     background-color: #021526;
@@ -28,33 +49,17 @@ body {
     font-size: 24px; 
 }
 
-@media (min-width: 992px) {
-    .navbar {
-        font-size: 20px;
-    }
-
-    .navbar .navbar-brand {
-        font-size: 32px;
-    }
-
-    .navbar .navbar-nav {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 991px) {
-    .navbar .navbar-brand {
-        font-size: 28px;
-    }
-
-    .navbar .navbar-nav {
-        font-size: 18px;
-    }
-}
 
 @media (max-width: 576px) {
     .navbar .navbar-brand {
         font-size: 24px;
+        display:flex;
+        align-items: center;
+    }
+
+    .navbar .navbar-brand img{
+        width: 50px;
+        height: auto;
     }
 
     .navbar .navbar-nav {
@@ -71,6 +76,7 @@ body {
 }
 
 .profile {
+    font-family: 'Figtree';
     padding-top: 10px;
     border-radius: 50%;
     height: 350px;
@@ -87,6 +93,7 @@ body {
 }
 
 .typing-container {
+    font-family: 'Figtree Regular';
     font-size: 40px;
     white-space: nowrap;
     display: inline-flex;
@@ -101,6 +108,7 @@ body {
     color: #FF8225;
     font-size: 50px;
     position: relative;
+    font-family: 'Figtree';
 }
 
 .cursor {
@@ -144,6 +152,7 @@ body {
 }
 
 .aboutme-container{
+    font-family: 'raleway';
     background-color: #021526;
     align-items: center;
     border-top: #FF8225;
@@ -162,6 +171,7 @@ body {
     }
 }
 .aboutme{
+    font-family: 'Figtree Bold';
     font-size: 50px;
     margin: 20px;
     background-color:#B43F3F;
@@ -175,6 +185,7 @@ body {
 }
 
 .description {
+    font-family: 'raleway';
     color:#F8EDED;
     text-align: justify;
     font-size: 18px; 
@@ -184,6 +195,7 @@ body {
 
 
 .projects-container{
+    font-family: 'raleway';
     background-color: #DBE2EF;
     align-items: center;
     display: flex;
@@ -201,6 +213,7 @@ body {
 }
 
 .projects-title{
+    font-family: 'Figtree Bold';
     font-size: 50px;
     margin: 20px;
     color: #021526;
@@ -241,6 +254,7 @@ body {
 }
 
 .contents-container {
+    font-family: 'raleway';
     padding: 20px;
     background-color: #021526;
     display: flex;
@@ -251,6 +265,7 @@ body {
 }
 
 .contents-title {
+    font-family: 'Figtree Bold';
     font-size: 50px;
     margin: 20px;
     background-color: #B43F3F;
@@ -263,6 +278,18 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (max-width: 576px) {
+    .contents-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contents-title {
+        font-size: 30px;
+    }
+}
+
 
 .socialmedia-tray{
     background-color: #DBE2EF;
@@ -281,4 +308,9 @@ body {
     width: 40px;
     height: auto;
     vertical-align: middle;
+    transition: width 0.3s ease;
+}
+
+.socialmedia-icons img:hover{
+    width: 42px;
 }

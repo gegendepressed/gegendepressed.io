@@ -23,10 +23,6 @@ body {
     letter-spacing: 3%;
 }
 
-
-
-
-
 .navbar {
     background-color: #021526;
     position: absolute;
@@ -41,6 +37,7 @@ body {
     font-family: 'raleway';
     font-weight: bold;
     font-size: 36px;
+
 }
 
 .navbar .navbar-nav {
@@ -49,16 +46,17 @@ body {
     font-size: 24px; 
 }
 
-
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     .navbar .navbar-brand {
         font-size: 24px;
-        display:flex;
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 
-    .navbar .navbar-brand img{
+    .navbar .navbar-brand img {
         width: 50px;
+        padding-right: 10px;
         height: auto;
     }
 
@@ -66,7 +64,6 @@ body {
         font-size: 16px;
     }
 }
-
 
 .profile-container {
     margin-top: 80px; 
@@ -85,7 +82,7 @@ body {
     border-color: #B43F3F;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .d-flex {
         flex-direction: column; 
         align-items: center;
@@ -101,7 +98,7 @@ body {
     display: inline;
     position: relative; 
     padding: 20px;
-    margin-left:auto;
+    margin-left: auto;
 }
 
 .typed-text {
@@ -134,7 +131,8 @@ body {
         display: block;
     }
 }
-@media (max-width: 992px) {
+
+@media (max-width: 480px) {
     .typing-container {
         display: absolute;
         text-align: center;
@@ -143,7 +141,7 @@ body {
         margin: auto;
     }
 
-    .typed-text{
+    .typed-text {
         text-align: center;
         align-items: center;
         font-size: 30px;
@@ -151,7 +149,7 @@ body {
     }
 }
 
-.aboutme-container{
+.aboutme-container {
     font-family: 'raleway';
     background-color: #021526;
     align-items: center;
@@ -170,12 +168,13 @@ body {
         align-items: center;
     }
 }
-.aboutme{
+
+.aboutme {
     font-family: 'Figtree Bold';
     font-size: 50px;
     margin: 20px;
-    background-color:#B43F3F;
-    color:#F8EDED;
+    background-color: #B43F3F;
+    color: #F8EDED;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -186,15 +185,14 @@ body {
 
 .description {
     font-family: 'raleway';
-    color:#F8EDED;
+    color: #F8EDED;
     text-align: justify;
     font-size: 18px; 
     line-height: 1.6;
     padding: 20px; 
 }
 
-
-.projects-container{
+.projects-container {
     font-family: 'raleway';
     background-color: #DBE2EF;
     align-items: center;
@@ -212,7 +210,7 @@ body {
     }
 }
 
-.projects-title{
+.projects-title {
     font-family: 'Figtree Bold';
     font-size: 50px;
     margin: 20px;
@@ -224,7 +222,7 @@ body {
     width: fit-content;
 }
 
-.card{
+.card {
     width: 1200px;
     height: 600px;
     display: flex;
@@ -232,23 +230,20 @@ body {
     color: #F8EDED;
 }
 
-.cardimage{
+.cardimage {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
-    .cardimage{
-        width:100%;
-        width: 400px;
+@media (max-width: 480px) {
+    .cardimage {
+        width: 100%;
         height: auto;
-        display: flex;
     }
 
-    .card{
-        width:100%;
-        width: 400px;
+    .card {
+        width: 100%;
         height: auto;
     }
 }
@@ -261,7 +256,7 @@ body {
     flex-direction: column;
     height: auto;
     padding-left: 70px;
-    padding-right:70px;
+    padding-right: 70px;
 }
 
 .contents-title {
@@ -279,7 +274,7 @@ body {
     margin-right: auto;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     .contents-container {
         padding-left: 10px;
         padding-right: 10px;
@@ -315,14 +310,11 @@ body {
     transform: scale(0.95);
 }
 
-
-
-.socialmedia-tray{
+.socialmedia-tray {
     background-color: #DBE2EF;
     padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
 }
 
 .socialmedia-icons {
@@ -337,6 +329,33 @@ body {
     transition: width 0.3s ease;
 }
 
-.socialmedia-icons img:hover{
+.socialmedia-icons img:hover {
     width: 42px;
+}
+
+.website-mention {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+@media (max-width: 480px) {
+    .socialmedia-tray {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .socialmedia-icons {
+        margin-bottom: 10px;
+    }
+
+    .website-mention {
+        position: static;
+        margin-left: 0;
+        text-align: center;
+    }
 }

@@ -59,7 +59,7 @@
             <div class="card-body">
               <h5 class="card-title">Openmedia - A Social Media Web App</h5>
               <p class="card-text">Developed originally as a college project, it has been scaled according to the requirements of a generic social media app. Built using Flask and Html.</p>
-              <a href="https;//openmedia.tabcat.live" class="btn btn-primary">Openmedia</a>
+              <a href="https://openmedia.tabcat.live" class="btn btn-primary stretched-link">Openmedia</a>
             </div>
           </div>
 
@@ -68,7 +68,7 @@
             <div class="card-body">
               <h5 class="card-title">Reddit API - Jokes Scraper</h5>
               <p class="card-text"> This FastAPI application connects to Reddit using the PRAW library to fetch random posts from a specified subreddit. It returns the title, description, and URL of a post, ideal for a site that retrieves jokes from various subreddits.</p>
-              <a href="https://frost2k5.is-a.dev/jokes.html" class="btn btn-primary">Go somewhere</a>
+              <a href="https://frost2k5.is-a.dev/jokes.html" class="btn btn-primary stretched-link">Go somewhere</a>
             </div>
           </div>
 
@@ -77,30 +77,32 @@
             <div class="card-body">
               <h5 class="card-title">This Portfolio Website</h5>
               <p class="card-text">This website was built to catchup with html and css along with Bootstrap as framework. Still there's work to do.</p>
-              <a href="https;//sairaj.tabcat.live" class="btn btn-primary">Go somewhere</a>
+              <a href="https://sairaj.tabcat.live" class="btn btn-primary stretched-link">Go somewhere</a>
             </div>
           </div>
     </div>
 
     <div class="contents-container text-white " id="contact">
         <div class="contents-title" data-aos="zoom-in"> Contact </div>
-        <form>
+        <form name="myForm" onsubmit="validateForm(); return false">
         <div class="form-row">
           <div class="col-auto text-start">
-            <label for="validationDefault01">First name</label>
-            <input type="text" class="form-control text-start" id="validationDefault01" placeholder="First name" value="Mark" required>
+            <label for="validationDefault01">Name</label>
+            <input type="text" class="form-control text-start" id="name" placeholder="First name"required>
           </div>
           <div class="col-auto text-start">
-            <label for="validationDefault02">Last name</label>
-            <input type="text" class="form-control text-start" id="validationDefault02" placeholder="Last name" value="Otto" required>
+            <label for="validationDefault02">Email</label>
+            <input type="text" class="form-control text-start" id="email" placeholder="Last name" required>
           </div>
           </div>
           <div class="form-group text-start">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control text-start" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="exampleFormControlInput1">Message</label>
+            <input type="email" class="form-control text-start" id="message" placeholder="Type what you would want me to know ?">
           </div>
+          <br>
+          <input class="submitbutton btn btn-primary btn-lg btn-block" type="submit" value="Submit">
         </form>
-        </div>
+    </div>
 
         <footer class="socialmedia-tray">
           <div class="socialmedia-icons">
@@ -116,7 +118,7 @@
             <a href="mailto:sairaj09pai@gmail.com">
               <img src="images/mailicon.svg" alt="Email">
             </a>
-            <a href="https://reddit.com/tablaplayer" target="_blank" rel="noopener noreferrer">
+            <a href="https://reddit.com/u/thetablaplayer" target="_blank" rel="noopener noreferrer">
               <img src="images/redditicon.svg" alt="Reddit">
             </a>
           </div>

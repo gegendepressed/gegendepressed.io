@@ -229,7 +229,7 @@ body {
     height: 600px;
     display: flex;
     flex-direction: column;
-    background-color: #021526;
+    color: #F8EDED;
 }
 
 .cardimage{
@@ -289,6 +289,32 @@ body {
         font-size: 30px;
     }
 }
+
+.submitbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submitbutton:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.submitbutton:active {
+    transform: scale(0.95);
+}
+
 
 
 .socialmedia-tray{

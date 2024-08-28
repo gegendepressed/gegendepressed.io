@@ -38,3 +38,25 @@ document.addEventListener("DOMContentLoaded", function () {
   // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+async function validateForm() {
+  let myForm = document.forms["myForm"];
+  let name = myForm["name"].value;
+  let email = myForm["email"].value;
+  let message = myForm["message"].value;
+  let finalstring = name+"\n"+email+"\n"+message;
+  
+  console.log(finalstring);
+  const response = await fetch('https://pingme.tabcat.live/api/sendmessage', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      "username": "relativesciencex",
+      "message": finalstring,
+      "securitykey": 4209})
+  });
+  respText = await response.text();
+  alert(respText);
+} 

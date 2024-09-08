@@ -53,11 +53,11 @@ function copytext() {
     const jokeDescription = document.getElementById("Joke-Description").textContent;
     const url = document.getElementById("URL").textContent;
 
-    const combinedText = `${jokeHeader}\n\n${jokeDescription}\nPost Link - "${url}`;
+    const combinedText = `${jokeHeader}\n\n${jokeDescription}\n\nPost Link - ${url}\n\nDone using https://sairaj.tabcat.live/redditapi.html`;
 
     navigator.clipboard.writeText(combinedText)
     .then(() => {
-        alert("Copied the text: \n" + combinedText + "\n\n" + "Done using https://sairaj.tabcat.live/redditapi.html") ;
+        alert("Copied the text: \n\n" + combinedText + "\n\n") ;
     })
     .catch(err => {
         console.error("Error copying text: ", err);

@@ -44,12 +44,12 @@ body {
 .navbar .navbar-brand {
     font-family: 'raleway';
     font-weight: bold;
-    font-size: 36px;
+    font-size: 50px;
 }
 .navbar .navbar-nav {
     font-family: 'raleway';
     font-style: normal;
-    font-size: 36px; 
+    font-size: 50px; 
 }
 @media (min-width: 992px) {
     .navbar {
@@ -116,7 +116,6 @@ body {
     padding: 20px;
     display: flex;
     justify-content: flex-end;
-    position: fixed;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;

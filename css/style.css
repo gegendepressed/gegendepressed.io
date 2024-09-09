@@ -73,7 +73,7 @@ body {
 }
 
 .profile {
-    font-family: 'Figtree';
+    font-family: 'raleway';
     padding-top: 10px;
     border-radius: 50%;
     height: 350px;
@@ -90,7 +90,7 @@ body {
 }
 
 .typing-container {
-    font-family: 'Figtree Regular';
+    font-family: 'raleway';
     font-size: 40px;
     white-space: nowrap;
     display: inline-flex;
@@ -105,7 +105,9 @@ body {
     color: #FF8225;
     font-size: 50px;
     position: relative;
-    font-family: 'Figtree';
+    font-family: 'raleway';
+    font-weight: bold;
+    font-style: oblique;
 }
 
 .cursor {
@@ -170,7 +172,8 @@ body {
 }
 
 .aboutme {
-    font-family: 'Figtree Bold';
+    font-family: 'raleway';
+    font-weight: bold;
     font-size: 50px;
     margin: 20px;
     background-color: #B43F3F;
@@ -211,7 +214,8 @@ body {
 }
 
 .projects-title {
-    font-family: 'Figtree Bold';
+    font-family: 'raleway';
+    font-weight: bold;
     font-size: 50px;
     margin: 20px;
     color: #021526;
@@ -260,7 +264,8 @@ body {
 }
 
 .contents-title {
-    font-family: 'Figtree Bold';
+    font-family: 'raleway';
+    font-weight: bold;
     font-size: 50px;
     margin: 20px;
     background-color: #B43F3F;

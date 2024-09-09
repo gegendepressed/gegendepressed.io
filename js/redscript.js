@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const subreddit = document.getElementById("subredditname").value.trim();
         const selectedValue = getSelectedValue();
         const apiUrl = `https://redditapi-sitt.onrender.com/${subreddit}?type=${selectedValue}`;
-        console.log("API URL:", apiUrl);
+        console.log("Results are being fetched....")
 
         fetch(apiUrl)
             .then(response => {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log("Results fetched.")
                 document.getElementById("Joke-Header").textContent = data.title || "Content not loading, please resubmit again";
                 document.getElementById("Joke-Description").textContent = data.description || "";
-                document.getElementById("URL").textContent = data.url || "";
+                document.getElementById("URL").textContent = data.url ? `PostURL : ${data.url}` : "";
                 document.getElementById("Date").textContent = data.date ? `Date: ${data.date}` : "";
                 document.getElementById("copytextbutton").disabled = false;
             })

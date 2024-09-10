@@ -53,7 +53,7 @@ function copytext() {
     const jokeDescription = document.getElementById("Joke-Description").textContent;
     const url = document.getElementById("URL").textContent;
 
-    const combinedText = `${jokeHeader}\n\n${jokeDescription}\n\nPost Link - ${url}\n\nDone using https://sairaj.tabcat.live/redditapi.html`;
+    const combinedText = `${jokeHeader}\n\n${jokeDescription}\n\n${url}\n\nDone using https://sairaj.tabcat.live/redditapi.html`;
 
     navigator.clipboard.writeText(combinedText)
     .then(() => {

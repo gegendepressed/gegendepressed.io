@@ -59,4 +59,23 @@ async function validateForm() {
   });
   respText = await response.text();
   alert(respText);
-} 
+
+  let fileinput = myForm["filename"];
+  if (fileinput && fileinput.files.length > 0) {
+    let file = fileinput.files[0];
+  
+    const form = new FormData();
+    form.append("file", file); 
+    form.append("username", "relativesciencex");  
+    form.append("securitykey", 4209); 
+  
+    const fileresponse = await fetch('https://pingme.tabcat.live/api/sendfile', {
+      method: 'POST',
+      body: form
+    });
+  
+    const filerespText = await fileresponse.text();
+    alert(filerespText);
+  }
+  myForm.reset()
+}

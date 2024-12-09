@@ -169,7 +169,7 @@ body {
         display: absolute;
         align-items: center;
     }
-}
+}   
 
 .aboutme {
     font-family: 'raleway';
@@ -184,6 +184,39 @@ body {
     display: flex;
     width: fit-content;
     padding: 20px;
+}
+
+.visitcounter-label {
+    background-color: #DBE2EF;
+    color: #021526;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 20px 0 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 2px;
+}
+
+.visitcounter-count {
+    background-color: #DBE2EF;
+    color: #007bff;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 0 20px 20px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.visitcounter-label:hover {
+    background-color: #cbd5e0;
+    color: #021526;
+    cursor: pointer;
+}
+
+.visitcounter-count:hover {
+    background-color: #cbd5e0;
+    color: #007bff;
+    cursor: pointer;
 }
 
 .description {

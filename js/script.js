@@ -79,3 +79,16 @@ async function validateForm() {
   }
   myForm.reset()
 }
+
+const counterElement = document.getElementById("visitcount");
+let visitCount = 0;
+const counterApiURL = "https://api.counterapi.dev/v1/gegendepressed/portfolio/up";
+
+visitCount = fetch(counterApiURL)
+  .then( (resp) => {
+    return resp.json();
+  })
+  .then( (data) => {
+    visitCount = data.count;
+    counterElement.innerHTML = visitCount;
+  })
